@@ -167,6 +167,12 @@ body{
 	background: url(images/down.png);
 }
 
-.updown:hover{
+
+.Products:hover > .updown{
 	background: url(images/down.png);
+}
+
+.submenu:hover ~ .Products{
+	color: white;
+	background-color: #2c71b8;
 }

@@ -45,6 +45,7 @@ body{
 	height: 50px;
 	line-height: 50px;
 	width: 144px;
+	position: relative;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -56,6 +57,7 @@ body{
 }
 .menu a{
 	color: #2c71b8;
+
 }
 .menu a:hover{
 	color: white;
@@ -151,4 +153,20 @@ body{
 .menu li:nth-child(2):hover > .showsub{
 	display:block;
 	z-index: 1;
+}
+.updown {
+	width: 16px;
+	height: 16px;
+	background: url(images/up.png);
+	position: absolute;
+	top: 18px;
+	right: 6px;
+}
+
+.updown > .menu li:nth-child(2):hover{
+	background: url(images/down.png);
+}
+
+.updown:hover{
+	background: url(images/down.png);
 }

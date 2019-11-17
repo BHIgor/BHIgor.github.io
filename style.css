@@ -16,16 +16,19 @@ body{
 }
 .container{
 	width: 1170px;
-
 	margin: 0 auto;
+	display: flex;
+
 }
-.row:after{
-	content: "";
-	clear: both;
-	display: block;
+.flex-container{
+	display: flex;
+	
+}
+.flex-column{
+	flex-direction: column;
 }
 [class *="col-"]{
-	float: left;
+	display: flex;
 }
 
 .col-md-3{
@@ -184,9 +187,14 @@ body{
 	background-color: #2c71b8;
 	color: white;
 }
-
+.flex-no{
+	flex-direction:column;
+}
 .slider{
 	height: 400px;
+}
+.flex-end{
+	justify-content: flex-end;
 }
 .filter{
 	background-color: #ccc;

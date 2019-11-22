@@ -518,4 +518,31 @@ justify-content: space-between;
 	top:10px;
 	right: 5px;
 }
+.LoadMoreProducts{
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+}
 
+.copyright{
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #2c71b8;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+footer{
+	background-color: rgba(255,255,255,0.75);
+
+}

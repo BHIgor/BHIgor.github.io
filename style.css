@@ -186,6 +186,7 @@ justify-content: space-between;
 .Products:hover{
 	background-color: #2c71b8;
 	color: white;
+	z-index: 10;
 }
 .flex-no{
 	flex-direction:column;
@@ -544,5 +545,61 @@ justify-content: space-between;
 }
 footer{
 	background-color: rgba(255,255,255,0.75);
+	margin-bottom: -15px;
+}
+.wrap {
+	width: 1170px;
+	margin: 0 auto;
+}
+.slider-block div{
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	padding: 50px 0;
+}
+.slick-prev {
+    left: 12px;
+    z-index: 10;
+}
+.slick-next {
+    right: 44px;
+}
+.product-quantity{
+	margin-left: 12px;
+ 	margin-top: 42px;
+}
+.slick-prev:before{
+	font-size: 50px;
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    border: solid white;
+ 	 border-width: 0 3px 3px 0;
+  	display: inline-block;
+	width: 50px;
+	opacity: 0.75;
+	color: inherit;
 
+}
+.slick-next:before{
+	font-size: 50px;
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid white;
+ 	 border-width: 0 3px 3px 0;
+  	display: inline-block;
+	width: 50px;
+	opacity: 0.75;
+	color: inherit;
+		
+}
+.slick-dots li button:before{
+	content: '';
+	border: 1px solid white;
+	height: 10px;
+	width: 10px;
+	opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+	background-color: white;
+	opacity: 1;
 }

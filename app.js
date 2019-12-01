@@ -4,7 +4,7 @@ let addToCartButtons = document.querySelectorAll(".add-to-cart")
 for (let i = 0; i < addToCartButtons.length; i++){
 	addToCartButtons[i].addEventListener("click", function () {
 		let prevProductCount = +productCountEl.textContent
-		productCountEl.textContent = prevProductCount + 1
+		productCountEl.textContent = prevProductCount + +productQuantity[i].value
 	})
 }
 
@@ -34,6 +34,7 @@ for (let i = 0; i < plusButton.length; i++){
 	plusButton[i].addEventListener("click", function(){
 		let prodCount = +productQuantity[i].value
 		productQuantity[i].value = prodCount + 1
+		
 		if (productQuantity[i].value > 1)  {
 				minusButton[i].disabled = false;
 		}
